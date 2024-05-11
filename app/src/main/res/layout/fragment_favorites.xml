@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Favorites"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add your name and choose your favorite recipe here."
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"/>
+
+    <RadioGroup
+        android:id="@+id/rgRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Radio buttons will be added dynamically -->
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"/>
+
+    <Button
+        android:id="@+id/btnShowSelections"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Selections"/>
+
+    <TextView
+        android:id="@+id/tvSelections"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"/>
+</LinearLayout>
